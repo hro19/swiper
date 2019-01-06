@@ -1,136 +1,208 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns#">
-<meta charset="utf-8">
-<script src="/js/viewport.js"></script>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="format-detection" content="telephone=no">
-<link rel="shortcut icon" href="/images/favicon.ico">
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.jpg">
-<link rel="stylesheet" href="/css/common.css">
-<link rel="stylesheet" href="/css/component.css">
-<link rel="stylesheet" href="/css/frontpage.css">
-<script src="/js/modernizr-2.8.3.min.js"></script>
-<title>タイトルタイトル</title>
+	<meta charset="utf-8">
+	<script src="/js/viewport.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+	<link rel="apple-touch-icon" href="/images/apple-touch-icon.jpg">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/component.css">
+	<link rel="stylesheet" href="/lib/swiper/swiper.css">
+	<link rel="stylesheet" href="/css/frontpage.css">
+	<script src="/js/modernizr-2.8.3.min.js"></script>
+	<title>swiper.js</title>
 </head>
+
 <body id="frontpage">
 
-<!-- # ===headerエリア_start=== # -->
-<header id="header">
-  <div class="inner">
-    <div class="header_inn"> <i></i>
-      <h1 class="logo img_link_on"><a href="#"><img src="http://placehold.jp/24/9272a8/ffffff/320x58.png" alt="logo"></a></h1>
-      <i class="h_insta"><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></i> </div>
-  </div>
-  <div id="menu"> <a class="menu-trigger" href="#"> <span></span> <span></span> <span></span> </a> </div>
-  <hr class="sp_starting_line">
-</header>
-<!-- # ===headerエリア_end=== # -->
-<!-- # ====sp_headerエリア_end==== # -->
-<div class="main-continer">
-	<!-- # ===pcメニューエリア_start=== # -->
-	<nav id="gnav">
+	<!-- # ===headerエリア_start=== # -->
+	<header id="header">
 		<div class="inner">
-			<div class="glist">
+			<div class="header_inn"> <i></i>
+				<h1 class="logo img_link_on"><a href="#"><img src="http://placehold.jp/24/9272a8/ffffff/320x58.png" alt="logo"></a></h1>
+				<i class="h_insta"><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></i>
+			</div>
+		</div>
+		<div id="menu"> <a class="menu-trigger" href="#"> <span></span> <span></span> <span></span> </a> </div>
+		<hr class="sp_starting_line">
+	</header>
+	<!-- # ===headerエリア_end=== # -->
+	<!-- # ====sp_headerエリア_end==== # -->
+	<div class="main-continer">
+		<!-- # ===pcメニューエリア_start=== # -->
+		<nav id="gnav">
+			<div class="inner">
+				<div class="glist">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="/concept/">Brand&nbsp;Concept</a></li>
+						<li><a href="/collection/">Collection</a></li>
+						<li><a href="/shoplist/">ShopList</a></li>
+						<li><a href="/faq/">Q&amp;A</a></li>
+						<li><a href="/recruit/">Recruit</a></li>
+						<li><a href="/contact/">Contact</a></li>
+						<li><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></li>
+					</ul>
+				</div>
+			</div>
+			<hr class="starting_line">
+		</nav>
+		<!-- # ===pcメニューエリア_end=== # -->
+		<!-- # ===spメニューエリア_start=== # -->
+		<nav id="sp_gnav">
+			<div class="sp_glist">
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="/concept/">Brand&nbsp;Concept</a></li>
-					<li><a href="/collection/">Collection</a></li>
+					<li><a href="/collection/mode_kaori/minkfur_pumps/">Collection</a></li>
 					<li><a href="/shoplist/">ShopList</a></li>
 					<li><a href="/faq/">Q&amp;A</a></li>
 					<li><a href="/recruit/">Recruit</a></li>
 					<li><a href="/contact/">Contact</a></li>
-					<li><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></li>
 				</ul>
 			</div>
-		</div>
-		<hr class="starting_line">
-	</nav>
-	<!-- # ===pcメニューエリア_end=== # -->
-	<!-- # ===spメニューエリア_start=== # -->
-	<nav id="sp_gnav">
-		<div class="sp_glist">
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/concept/">Brand&nbsp;Concept</a></li>
-				<li><a href="/collection/mode_kaori/minkfur_pumps/">Collection</a></li>
-				<li><a href="/shoplist/">ShopList</a></li>
-				<li><a href="/faq/">Q&amp;A</a></li>
-				<li><a href="/recruit/">Recruit</a></li>
-				<li><a href="/contact/">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<!-- # ===spメニューエリア_end=== # -->
-	
-	<!-- # ===================mainエリア_start================= # -->
-	<article class="main">
-		
-		<!-- # ===エリア_start=== # -->
-		<div class="wrap">
-			<div class="inner"> </div>
-			<!-- / .inner --> 
-		</div>
-		<!-- / .wrap -->
-		<!-- # ===エリア_end=== # -->
-		
-		<div id="wide">
-			<div id="visual">
+		</nav>
+		<!-- # ===spメニューエリア_end=== # -->
 
+		<!-- # ===================mainエリア_start================= # -->
+		<article class="main">
+
+			<!-- # ===エリア_start=== # -->
+			<div class="wrap">
+				<div class="inner"> </div>
+				<!-- / .inner -->
 			</div>
-			<!--/visual-->
-		</div>
-		<!--/wrap-->
-		
-		<div class="wrap bg_pink">
-			<div class="inner">
-				<div id="news_area">
-					<h2 class="tit01">News</h2>
-					<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa
-					<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa
-					<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa
-					<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa<br>aaaa
-				</div><!-- / .news_area -->
-			</div><!-- / .inner -->
-		</div><!-- / .wrap -->
-		<!-- # ===spニュースエリア_end=== # -->
+			<!-- / .wrap -->
+			<!-- # ===エリア_end=== # -->
 
+			<div id="wide">
+				<div id="visual">
 
-	</article>
-	<!-- / #main -->
-	<!-- # ===================mainエリア_end================= # -->
-</div>
-<!-- / .main-continer -->
-<!-- # ===================footerエリア_start================= # -->
-<div class="gotop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
-<footer id="footer">
-	<div class="inner_spwide">
-		<div class="footer_area">
-			<div class="footmenu">
-				<ul>
-					<li><a href="/privacypolicy/">Privacypolicy</a></li>
-					<li><a href="/contact/">Contact</a></li>
-					<li><a href="/company/">Company</a></li>
-				</ul>
-				<div class="f_sp_twin">
-					<p class="sp f_logo img_link_on"><a href="/"><img src="/images/logo.svg" alt="logo"></a></p>
-					<p class="f_insta"><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></p>
 				</div>
+				<!--/visual-->
 			</div>
-			<div class="copyright">Copyright&nbsp;©&nbsp;ABE&nbsp;Co.,Ltd. <br class="br_sp">
-				All&nbsp;Rights&nbsp;Reserved.</div>
-			<p class="pc foot_logo img_link_on"><a href="/"><img src="http://placehold.jp/24/9272a8/ffffff/320x58.png" alt="logo"></a></p>
-		</div>
-		<!-- / .footer_area -->
+			<!--/wrap-->
+
+			<div class="wrap bg_pink">
+				<div class="inner">
+					<!-- Slider main container -->
+					<div class="swiper-container">
+						<!-- Additional required wrapper -->
+						<ul class="swiper-wrapper">
+							<!-- Slides -->
+							<li class="swiper-slide"><img src="http://placehold.jp/24/eeeeee/ffffff/250x120.png?text=１番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/cccccc/ffffff/250x120.png?text=２番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/bbbbbb/ffffff/250x120.png?text=３番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/aaaaaa/ffffff/250x120.png?text=４番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/999999/ffffff/250x120.png?text=５番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/666666/ffffff/250x120.png?text=６番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/eeeeee/ffffff/250x120.png?text=７番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/cccccc/ffffff/250x120.png?text=８番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/bbbbbb/ffffff/250x120.png?text=９番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/aaaaaa/ffffff/250x120.png?text=１０番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/999999/ffffff/250x120.png?text=１１番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/666666/ffffff/250x120.png?text=１２番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/eeeeee/ffffff/250x120.png?text=１３番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/cccccc/ffffff/250x120.png?text=１４番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/bbbbbb/ffffff/250x120.png?text=１５番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/aaaaaa/ffffff/250x120.png?text=１６番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/999999/ffffff/250x120.png?text=１７番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/666666/ffffff/250x120.png?text=１８番目"></li>
+							<li class="swiper-slide"><img src="http://placehold.jp/24/555555/ffffff/250x120.png?text=１９番目"></li>
+						</ul>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div id="go_next" data-hash="9">ハッシュ9です</div>
+					<div id="go_prev" data-hash="4">ハッシュ4です</div>
+				</div><!-- / .inner -->
+			</div><!-- / .wrap -->
+			<!-- # ===spニュースエリア_end=== # -->
+
+			<div class="wrap bg_pink">
+				<div class="inner">
+					aaaa<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					aaaa<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				</div><!-- / .inner -->
+			</div><!-- / .wrap -->
+
+		</article>
+		<!-- / #main -->
+		<!-- # ===================mainエリア_end================= # -->
 	</div>
-</footer>
-<!-- # ===================footerエリア_end================= # -->
-<script src="/js/jquery-2.2.4.min.js"></script>
-<script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
-<script src="/js/setting.js"></script>
-<script src="/js/common.js"></script>
-<!-- # ===== フロントページ特有js start ===== # -->
-<script src="/js/top.js"></script>
-<!-- # ===== フロントページ特有js end ===== # -->
+	<!-- / .main-continer -->
+	<!-- # ===================footerエリア_start================= # -->
+	<div class="gotop"><a href="#top"><i class="fa fa-angle-up"></i></a></div>
+	<footer id="footer">
+		<div class="inner_spwide">
+			<div class="footer_area">
+				<div class="footmenu">
+					<ul>
+						<li><a href="/privacypolicy/">Privacypolicy</a></li>
+						<li><a href="/contact/">Contact</a></li>
+						<li><a href="/company/">Company</a></li>
+					</ul>
+					<div class="f_sp_twin">
+						<p class="sp f_logo img_link_on"><a href="/"><img src="/images/logo.svg" alt="logo"></a></p>
+						<p class="f_insta"><a href="#" target="_blank"><img src="/images/icon/instagram.svg" alt="instagram"></a></p>
+					</div>
+				</div>
+				<div class="copyright">Copyright&nbsp;©&nbsp;ABE&nbsp;Co.,Ltd. <br class="br_sp">
+					All&nbsp;Rights&nbsp;Reserved.</div>
+				<p class="pc foot_logo img_link_on"><a href="/"><img src="http://placehold.jp/24/9272a8/ffffff/320x58.png" alt="logo"></a></p>
+			</div>
+			<!-- / .footer_area -->
+		</div>
+	</footer>
+	<!-- # ===================footerエリア_end================= # -->
+	<script src="/js/jquery-2.2.4.min.js"></script>
+	<script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+	<script src="/js/setting.js"></script>
+	<script src="/js/common.js"></script>
+	<!-- # ===== フロントページ特有js start ===== # -->
+	<script src="/lib/swiper/swiper.js"></script>
+	<script src="/js/top.js"></script>
+	<script>
+		var mySwiper = new Swiper('.swiper-container', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			loop: false,
+			slidesPerView: 7,
+			slidesPerGroup: 1,
+			centeredSlides: false,
+			spaceBetween: 5,
+			breakpoints: {
+				// when window width is <= 320px
+				640: {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+				},
+			},
+		});
+
+		$('#go_next').on('click', function () {
+			//console.log(document.getElementById("go_next"))
+			mySwiper.slideTo(document.getElementById("go_next").dataset.hash);
+		});
+
+		$('#go_prev').on('click', function () {
+			//console.log(document.getElementById("go_prev"))
+			mySwiper.slideTo(document.getElementById("go_prev").dataset.hash);
+		});
+
+
+		mySwiper.on('slideChange', function () {
+			//console.log(mySwiper.activeIndex)
+		});
+	</script>
+	<!-- # ===== フロントページ特有js end ===== # -->
 </body>
+
 </html>
